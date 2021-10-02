@@ -11,7 +11,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//atualizado
+
 @RestController
 @RequestMapping("/api/pais")
 public class PaisController {
