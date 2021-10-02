@@ -19,7 +19,7 @@ public class PaisController {
 
     @GetMapping
     public List<Pais> getPaises() {
-        return repository.findAll().stream().map(p-> Pais(p)).collect(Collectors.toList());
+        return repository.findAll().stream().map(p-> new Pais(p)).collect(Collectors.toList());
     }
 
 
