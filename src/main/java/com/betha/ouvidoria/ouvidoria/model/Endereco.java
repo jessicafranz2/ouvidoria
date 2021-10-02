@@ -12,4 +12,6 @@ public class Endereco extends Cidade {
     public void setCidade(Cidade cidade) {
         this.cidade = cidade;
     }
+
+    //teste
 }
