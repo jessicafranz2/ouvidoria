@@ -1,4 +1,4 @@
-package Resource;
+package com.betha.ouvidoria.ouvidoria.resource;
 
 import com.betha.ouvidoria.ouvidoria.model.Pais;
 import com.betha.ouvidoria.ouvidoria.repository.PaisRepository;
