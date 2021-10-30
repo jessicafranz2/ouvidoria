@@ -1,20 +1,16 @@
-package Resource;
+package com.betha.ouvidoria.ouvidoria.resource;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.EntityNotFoundException;
 import com.betha.ouvidoria.ouvidoria.model.Pais;
 import com.betha.ouvidoria.ouvidoria.repository.PaisRepository;
-import com.betha.ouvidoria.ouvidoria.resource.PaisDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
-@RestController
-@RequestMapping("/api/pais")
-public class PaisController {
+public class UsuarioController {
 
     @Autowired
     private PaisRepository repository;
@@ -41,7 +37,6 @@ public class PaisController {
     }
 
 
-
     @PutMapping("/{id}")
     public Pais update(@PathVariable(value = "id") Long paisId,
                        @RequestBody Pais pais) throws EntityNotFoundException {
@@ -63,6 +58,4 @@ public class PaisController {
 
         return ResponseEntity.noContent().build();
     }
-
 }
-
