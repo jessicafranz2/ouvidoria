@@ -21,7 +21,7 @@ public class AcaoRespostaController {
     public List<AcaoRespostaDTO> getAcaoResposta() {
         return repository.findAll().stream().map(p-> AcaoRespostaDTO.toDTO(p)).collect(Collectors.toList());
     }
-
+//teste
 
     @GetMapping("/{id}")
     public PaisDTO getAcaoRespostaId(@PathVariable(value = "id") Long paisId) throws EntityNotFoundException {
