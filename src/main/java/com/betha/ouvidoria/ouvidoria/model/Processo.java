@@ -1,7 +1,9 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Processo {
     private Integer id;
     private String status;

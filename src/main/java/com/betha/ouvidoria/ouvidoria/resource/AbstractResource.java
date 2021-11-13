@@ -32,3 +32,4 @@ public abstract class AbstractResource {
         errors.put("", ex.getMessage());
         return errors;
     }
+}

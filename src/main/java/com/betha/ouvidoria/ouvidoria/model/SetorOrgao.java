@@ -1,5 +1,8 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class SetorOrgao {
     private Integer id;
     private String departamento;

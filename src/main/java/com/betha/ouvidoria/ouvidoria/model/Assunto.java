@@ -1,5 +1,8 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Assunto {
     private Integer id;
     private String descricaoAssunto;

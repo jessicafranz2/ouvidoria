@@ -1,5 +1,8 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class FormaSolicitacao {
     private Integer id;
     private String tipoSolicitacao;

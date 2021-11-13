@@ -1,5 +1,7 @@
 package com.betha.ouvidoria.ouvidoria.enterprise;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 

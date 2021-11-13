@@ -1,7 +1,6 @@
 package com.betha.ouvidoria.ouvidoria.resource;
 
 import com.betha.ouvidoria.ouvidoria.model.AcaoResposta;
-import com.betha.ouvidoria.ouvidoria.model.Pais;
 import com.betha.ouvidoria.ouvidoria.repository.PaisRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,10 +20,10 @@ public class AcaoRespostaController {
     public List<AcaoRespostaDTO> getAcaoResposta() {
         return repository.findAll().stream().map(p-> AcaoRespostaDTO.toDTO(p)).collect(Collectors.toList());
     }
-//teste
+
 
     @GetMapping("/{id}")
-    public PaisDTO getAcaoRespostaId(@PathVariable(value = "id") Long paisId) throws EntityNotFoundException {
+    public PaisDTO getAcaoRespostaId(@PathVariable(value = "id") Long acaoRespostaId) throws EntityNotFoundException {
 
         AcaoResposta acaoRespostaFind = repository.findById(acaoRespostaId)
                 .orElseThrow(() -> new EntityNotFoundException("Acão não encontrado com ID :: " + acaoRespostaId));
@@ -53,7 +52,7 @@ public class AcaoRespostaController {
 
 
     @DeleteMapping("/{id}")
-    public ResponseEntity delete(@PathVariable(value = "id") Long paisId) throws EntityNotFoundException {
+    public ResponseEntity delete(@PathVariable(value = "id") Long acaoRespostaId) throws EntityNotFoundException {
         AcaoResposta acaoRespostaFind = repository.findById(acaoRespostaId)
                 .orElseThrow(() -> new EntityNotFoundException("AcaoResposta não encontrado com ID :: " + acaoRespostaId));
 
