@@ -1,10 +1,12 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractEntity;
+
 import javax.persistence.Entity;
 
 @Entity
-public class AcaoResposta {
-    private Integer id;
+public class AcaoResposta extends AbstractEntity {
+
     private String tipoResposta;
 
     public AcaoResposta(Integer id, String tipoResposta) {
