@@ -1,10 +1,12 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractEntity;
+
 import javax.persistence.Entity;
 
 @Entity
-public class Usuario {
-    private Integer id;
+public class Usuario extends AbstractEntity {
+    //private Integer id;
     private String nome;
     private String CPF;
     private String RG;
@@ -12,22 +14,13 @@ public class Usuario {
     private String login;
     private String senha;
 
-    public Usuario(Integer id, String nome, String CPF, String RG, String telefone, String login, String senha) {
-        this.id = id;
+    public Usuario(String nome, String CPF, String RG, String telefone, String login, String senha) {
         this.nome = nome;
         this.CPF = CPF;
         this.RG = RG;
         Telefone = telefone;
         this.login = login;
         this.senha = senha;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getNome() {

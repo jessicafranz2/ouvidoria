@@ -1,23 +1,16 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractRegion;
+
 import javax.persistence.Entity;
 
 @Entity
-public class FormaSolicitacao {
-    private Integer id;
+public class FormaSolicitacao extends AbstractRegion {
+    //private Integer id;
     private String tipoSolicitacao;
 
-    public FormaSolicitacao(Integer id, String tipoSolicitacao) {
-        this.id = id;
+    public FormaSolicitacao(String tipoSolicitacao) {
         this.tipoSolicitacao = tipoSolicitacao;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getTipoSolicitacao() {

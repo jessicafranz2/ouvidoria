@@ -1,26 +1,19 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractRegion;
+
 import javax.persistence.Entity;
 import java.util.Date;
 
 @Entity
-public class Processo {
-    private Integer id;
+public class Processo extends AbstractRegion {
+    //private Integer id;
     private String status;
     private Date dataMovimento;
 
-    public Processo(Integer id, String status, Date dataMovimento) {
-        this.id = id;
+    public Processo(String status, Date dataMovimento) {
         this.status = status;
         this.dataMovimento = dataMovimento;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getStatus() {

@@ -4,7 +4,7 @@ import org.hibernate.cache.spi.support.AbstractRegion;
 
 import javax.persistence.Entity;
 
-@Entity
+
 public class Endereco extends Cidade {
     private Cidade cidade;
 
