@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class SetorOrgaoController {
     @Autowired
     private SetorOrgaoRepository repository;
-
+//t
     @GetMapping
     public List<SetorOrgaoDTO> getSetorOrgaos() {
         return repository.findAll().stream().map(p-> SetorOrgaoDTO.toDTO(p)).collect(Collectors.toList());
