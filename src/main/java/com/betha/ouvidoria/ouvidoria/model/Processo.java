@@ -1,12 +1,13 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractEntity;
 import com.betha.ouvidoria.ouvidoria.enterprise.AbstractRegion;
 
 import javax.persistence.Entity;
 import java.util.Date;
 
 @Entity
-public class Processo extends AbstractRegion {
+public class Processo extends AbstractEntity {
     //private Integer id;
     private String status;
     private Date dataMovimento;
