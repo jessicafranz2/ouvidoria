@@ -14,6 +14,10 @@ public class Assunto extends AbstractEntity {
         this.descricaoAssunto = descricaoAssunto;
     }
 
+    public Assunto() {
+
+    }
+
     public String getDescricaoAssunto() {
         return descricaoAssunto;
     }
