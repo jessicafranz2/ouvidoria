@@ -1,11 +1,12 @@
 package com.betha.ouvidoria.ouvidoria.model;
 
+import com.betha.ouvidoria.ouvidoria.enterprise.AbstractEntity;
 import com.betha.ouvidoria.ouvidoria.enterprise.AbstractRegion;
 
 import javax.persistence.Entity;
 
 @Entity
-public class Assunto extends AbstractRegion {
+public class Assunto extends AbstractEntity {
     //private Integer id;
     private String descricaoAssunto;
 
