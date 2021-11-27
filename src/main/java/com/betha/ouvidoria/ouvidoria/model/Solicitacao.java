@@ -8,8 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Denuncia extends AbstractRegion {
-   // @NotNull
+public class Solicitacao extends AbstractRegion {
+    // @NotNull
     @ManyToOne
     @JoinColumn(name = "I_SETORORGAO", referencedColumnName = "ID")
     private SetorOrgao setorOrgao;
@@ -19,7 +19,7 @@ public class Denuncia extends AbstractRegion {
     private Assunto assunto;
     private String descricao;
 
-    public Denuncia() {
+    public Solicitacao() {
         this.setorOrgao = setorOrgao;
         this.assunto = assunto;
         this.descricao = descricao;
